@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   Nav,
   NavLink,
@@ -16,12 +17,12 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to='/about' >About</NavLink>
-          <NavLink to='/shoes' >Shoes</NavLink>
-          <NavLink to='/clothing' >Clothing</NavLink>
-          <NavLink to='/accessories' >Accessories</NavLink>
-          <NavLink to='/contactus' >Contact us</NavLink>
-          <NavLink to='/signup' >Sign up</NavLink>
+          <NavLink to='/about' activeStyle>About</NavLink>
+          <NavLink to='/shoes' activeStyle>Shoes</NavLink>
+          <NavLink to='/clothing' activeStyle>Clothing</NavLink>
+          <NavLink to='/accessories' activeStyle>Accessories</NavLink>
+          <NavLink to='/contactus' activeStyle>Contact us</NavLink>
+          <NavLink to='/signup' activeStyle>Sign up</NavLink>
         </NavMenu>
         <NavBtn>
         <NavBtnLink to='/'>Add Product</NavBtnLink>
