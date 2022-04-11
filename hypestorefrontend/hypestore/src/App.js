@@ -1,12 +1,26 @@
+import React from 'react';
 import './App.css';
-import User from './components/user'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import { SliderData } from './data/SliderData';
+import { BrowserRouter as Router, } from 'react-router-dom';
+import { NavMenu } from './components/Navbar/NavbarElements';
+import Announcement from './components/Announcement';
+
 
 function App() {
   return (
-    <div className="App">
-      <User/>
-    </div>
+    <Router>
+      <Announcement />
+      <Navbar />
+      <NavMenu />
+      <Hero slides={SliderData}/>
+    </Router> 
   );
 }
+
+
+
+
 
 export default App;
